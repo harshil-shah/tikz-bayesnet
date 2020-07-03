@@ -18,6 +18,8 @@
 minimum size=20pt, font=\fontsize{10}{10}\selectfont, node distance=1]
 % Observed node
 \tikzstyle{obs} = [latent,fill=gray!25]
+% Semi-observed node
+\tikzstyle{semiobs} = [latent, path picture={\fill[fill=gray!25] (path picture bounding box.south west) arc [start angle=225, end angle=405, radius=1000mm];}]
 % Constant node
 \tikzstyle{const} = [rectangle, inner sep=0pt, node distance=1]
 % Factor node
